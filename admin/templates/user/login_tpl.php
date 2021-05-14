@@ -41,7 +41,7 @@
 		</div>
 	</div>
 </div>
-<div class="login-copyright text-sm">Powered by <a href="//nina.vn" target="_blank" title="Thiết Kế Website Nina">Thiết Kế Website Nina</a></div>
+<div class="login-copyright text-sm">Powered by <a href="//fb.com/nguyenvanphuoc.vn" target="_blank" title="Nguyễn Văn Phước">Nguyễn Văn Phước</a></div>
 
 <!-- Login js -->
 <script type="text/javascript">
