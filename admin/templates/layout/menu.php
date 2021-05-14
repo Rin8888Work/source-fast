@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4 text-sm">
     <!-- Logo -->
     <a class="brand-link" href="index.php">
-        <img class="brand-image" src="assets/images/nina.png" alt="Nina">
+        <img style="width:70%" class="brand-image" src="assets/images/cms.png" alt="CMS Nguyễn Văn Phước">
     </a>
 
     <!-- Sidebar -->

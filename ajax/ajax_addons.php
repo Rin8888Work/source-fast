@@ -1,6 +1,6 @@
 <?php
 	include "ajax_config.php";
-	
+
 	$sqlCache = "select * from #_setting";
     $setting = $cache->getCache($sqlCache,'fetch',7200);
     $optsetting = (isset($setting['options']) && $setting['options'] != '') ? json_decode($setting['options'],true) : null;
@@ -36,7 +36,7 @@
     <script type="text/javascript">
         $(document).ready(function()
         {
-            $('.listvideos').change(function() 
+            $('.listvideos').change(function()
             {
                 var id = $(this).val();
                 $.ajax({
@@ -60,13 +60,13 @@
 
 <?php if($type == 'fanpage-facebook') { ?>
 	<!-- Fanpage -->
-	<div class="fb-page" 
-	    data-href="<?=$optsetting['fanpage']?>" 
-	    data-tabs="timeline" 
-	    data-width="300" 
-	    data-height="200" 
-	    data-small-header="true" 
-	    data-adapt-container-width="true" 
+	<div class="fb-page"
+	    data-href="<?=$optsetting['fanpage']?>"
+	    data-tabs="timeline"
+	    data-width="300"
+	    data-height="200"
+	    data-small-header="true"
+	    data-adapt-container-width="true"
 	    data-hide-cover="false" data-show-facepile="true">
 	    <div class="fb-xfbml-parse-ignore">
 	    <blockquote cite="<?=$optsetting['fanpage']?>">
@@ -90,6 +90,10 @@
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
+	    $(".js-facebook-messenger-container").hide();
+	    $(".js-facebook-messenger-box").click(function(){
+	      $(".js-facebook-messenger-container").toggle();
+	    });
 			$(".js-facebook-messenger-box").on("click", function(){
 				$(".js-facebook-messenger-box, .js-facebook-messenger-container").toggleClass("open"), $(".js-facebook-messenger-tooltip").length && $(".js-facebook-messenger-tooltip").toggle()
 			}), $(".js-facebook-messenger-box").hasClass("cfm") && setTimeout(function(){

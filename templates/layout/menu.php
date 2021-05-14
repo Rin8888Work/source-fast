@@ -4,9 +4,9 @@
          <div class="col-md-9 visible-lg">
             <ul id="main-nav" class="">
               <li><a class="transition <?php if($com=='' || $com=='index') echo 'active'; ?>" href="" title="<?=trangchu?>"><h2><?=trangchu?></h2></a></li>
-              
+
               <li><a class="transition <?php if($com=='gioi-thieu') echo 'active'; ?>" href="gioi-thieu" title="<?=gioithieu?>"><h2><?=gioithieu?></h2></a></li>
-              
+
               <li>
                   <a class="transition <?php if($com=='dich-vu') echo 'active'; ?>" href="dich-vu" title="Dịch vụ"><h2>Dịch vụ</h2></a>
                   <?php if(count($splistmenu)) { ?>
@@ -49,7 +49,7 @@
                       </ul>
                   <?php } ?>
               </li>
-             
+
               <li>
                   <a class="transition <?php if($com=='tin-tuc') echo 'active'; ?>" href="tin-tuc" title="<?=tintuc?>"><h2><?=tintuc?></h2></a>
                   <?php if(count($ttlistmenu)) { ?>
@@ -92,26 +92,26 @@
                       </ul>
                   <?php } ?>
               </li>
-              
+
               <li><a class="transition <?php if($com=='tuyen-dung') echo 'active'; ?>" href="tuyen-dung" title="<?=tuyendung?>"><h2><?=tuyendung?></h2></a></li>
-             
+
               <li><a class="transition <?php if($com=='thu-vien-anh') echo 'active'; ?>" href="thu-vien-anh" title="<?=thuvienanh?>"><h2><?=thuvienanh?></h2></a></li>
-             
+
               <li><a class="transition <?php if($com=='video') echo 'active'; ?>" href="video" title="Video"><h2>Video</h2></a></li>
-             
+
               <li><a class="transition <?php if($com=='lien-he') echo 'active'; ?>" href="lien-he" title="<?=lienhe?>"><h2><?=lienhe?></h2></a></li>
-              
+
           </ul>
          </div>
          <div class="col-md-3">
             <form id="form-xsearch">
                   <div class="search-box">
-                     <input type="text" class="keyword" placeholder="Nhập từ khóa..." value="<?=$_GET['keyword']?>" required>
+                     <input type="text" class="keyword" placeholder="Nhập từ khóa..." value="<?=isset($_GET['keyword']) ? $_GET['keyword'] : null?>" required>
                      <button type="submit"><i class="fas fa-search"></i></button>
                   </div>
                </form>
          </div>
       </div>
    </div>
-   
+
 </nav>

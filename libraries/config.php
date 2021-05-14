@@ -33,8 +33,8 @@
 		),
 		'website' => array(
 			'error-reporting' => true,
-			'secret' => '$nina@',
-			'salt' => 'swKJjeS!t',
+			'secret' => '$phuocnv@',
+			'salt' => 'pHuOcViPpRo!@#123#@!',
 			'debug-developer' => true,
 			'debug-css' => true,
 			'debug-js' => true,
@@ -84,7 +84,7 @@
 			)
 		),
 		'oneSignal' => array(
-			'active' => false,
+			'active' => true,
 			'id' => 'af12ae0e-cfb7-41d0-91d8-8997fca889f8',
 			'restId' => 'MWFmZGVhMzYtY2U0Zi00MjA0LTg0ODEtZWFkZTZlNmM1MDg4'
 		),

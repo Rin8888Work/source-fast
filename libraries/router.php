@@ -9,9 +9,10 @@
     $func->checkLogin();
 
 	/* Mobile detect */
-    $deviceType = ($detect->isMobile() || $detect->isTablet()) ? 'mobile' : 'computer';
-    if($deviceType == 'computer') define('TEMPLATE','./templates/');
-    else define('TEMPLATE','./templates-mobile/');
+    // $deviceType = ($detect->isMobile() || $detect->isTablet()) ? 'mobile' : 'computer';
+    // if($deviceType == 'computer')
+		define('TEMPLATE','./templates/');
+    // else define('TEMPLATE','./templates-mobile/');
 
     /* Watermark */
     $wtmPro = $d->rawQueryOne("select hienthi, photo, options from #_photo where type = ? and act = ? limit 0,1",array('watermark','photo_static'));
@@ -55,13 +56,13 @@
 	{
 		if(is_callable($match['target']))
 		{
-			call_user_func_array($match['target'], $match['params']); 
+			call_user_func_array($match['target'], $match['params']);
 		}
 		else
 		{
 			$com = (isset($match['params']['com'])) ? htmlspecialchars($match['params']['com']) : htmlspecialchars($match['target']);
 			$get_page = isset($_GET['p']) ? htmlspecialchars($_GET['p']) : 1;
-			
+
 		}
 	}
 	else
@@ -79,17 +80,16 @@
     /* Lang */
     if(isset($match['params']['lang']) && $match['params']['lang'] != '') $_SESSION['lang'] = $match['params']['lang'];
     else if(!isset($_SESSION['lang']) && !isset($match['params']['lang'])) $_SESSION['lang'] = $optsetting['lang_default'];
- 
+
     $lang = $_SESSION['lang'];
-    
+
 
     /* Slug lang */
     $sluglang = 'tenkhongdauvi';
-    
+
 
     /* SEO Lang */
     $seolang = "vi";
-
     /* Require datas */
     require_once LIBRARIES."lang/lang$lang.php";
     require_once SOURCES."allpage.php";
@@ -103,7 +103,7 @@
 		array("tbl"=>"product_sub","field"=>"ids","source"=>"product","com"=>"san-pham","type"=>"san-pham"),
 		array("tbl"=>"product_brand","field"=>"idb","source"=>"product","com"=>"thuong-hieu","type"=>"san-pham"),
 		array("tbl"=>"product","field"=>"id","source"=>"product","com"=>"san-pham","type"=>"san-pham",'menu'=>true),
-		
+
 		/* Tags */
 		array("tbl"=>"tags","tbltag"=>"product","field"=>"id","source"=>"tags","com"=>"tags-san-pham","type"=>"san-pham",'menu'=>true),
 		array("tbl"=>"tags","tbltag"=>"news","field"=>"id","source"=>"tags","com"=>"tags-tin-tuc","type"=>"tin-tuc",'menu'=>true),
@@ -142,11 +142,11 @@
 			$url_type = (isset($v['type']) && $v['type'] != '') ? $v['type'] : '';
 			$url_field = (isset($v['field']) && $v['field'] != '') ? $v['field'] : '';
 			$url_com = (isset($v['com']) && $v['com'] != '') ? $v['com'] : '';
-			
+
 			if($url_tbl!='' && $url_tbl!='static' && $url_tbl!='photo')
 			{
 				$row = $d->rawQueryOne("select id from #_$url_tbl where $sluglang = ? and type = ? and hienthi > 0 limit 0,1",array($com,$url_type));
-				
+
 				if($row['id'])
 				{
 					$_GET[$url_field] = $row['id'];
@@ -247,7 +247,7 @@
 			$type = $com;
 			$title_crumb = thuvienanh;
 			break;
-		
+
 		case 'video':
 			$source = "video";
 			$template = "video/video";
@@ -262,7 +262,7 @@
 			$title_crumb = giohang;
 			$seo->setSeo('type','object');
 			break;
-			
+
 		case 'account':
 			$source = "user";
 			break;
@@ -289,7 +289,7 @@
 		case 'sitemap':
 			include_once LIBRARIES."sitemap.php";
 			exit();
-			
+
 		case '':
 		case 'index':
 			$source = "index";
@@ -297,7 +297,7 @@
 			$seo->setSeo('type','website');
 			break;
 
-		default: 
+		default:
 			header('HTTP/1.0 404 Not Found', true, 404);
 			include("404.php");
 			exit();

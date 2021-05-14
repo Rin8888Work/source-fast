@@ -15,7 +15,7 @@ NN_FRAMEWORK.Loading = function() {
             $('.mask').addClass('hideg');
             $('#loading').fadeOut();
         },1000);
-        
+
     });
 };
 /* Paging ajax */
@@ -159,7 +159,7 @@ NN_FRAMEWORK.PostTin=function(){
         extensions: ["jpg","png","jpeg","JPG","PNG","JPEG","Png"],
         changeInput: '<div class="jFiler-input-dragDrop"><div class="jFiler-input-inner"><div class="jFiler-input-icon"><i class="icon-jfi-cloud-up-o"></i></div><div class="jFiler-input-text"><h3>Kéo và thả hình vào đây</h3> <span style="display:inline-block; margin: 15px 0">hoặc</span></div><a class="jFiler-input-choose-btn blue">Chọn hình</a></div></div>',
         showThumbs: true,
-        theme: "dragdropbox", 
+        theme: "dragdropbox",
         dragDrop: {
             dragEnter: null,
             dragLeave: null,
@@ -295,7 +295,7 @@ function DeletePhoto($id){
                 if(data.success=="1"){
                     $("#Itemphoto-"+$id).remove();
                 }
-                
+
             }
         });
     }
@@ -725,7 +725,7 @@ NN_FRAMEWORK.Login = function() {
     });
     $("input[name='listingType']").click(function(){
         $val=parseInt($(this).val());
-        
+
         if($val!=1){
             $(".propertyType-buy").css({"display":"none"});
             $(".propertyType-rent").css({"display":"block"});
@@ -741,10 +741,10 @@ NN_FRAMEWORK.Login = function() {
         $(".price").keyup(function(){
             var n = parseInt($(this).val().replace(/\D/g,''),10);
             $(this).val(n.toLocaleString());
-            
+
         });
     }
-    
+
 
 
 };
@@ -1643,6 +1643,7 @@ function ShowNotify($msg, $type) {
         return false;
     });
 }
+
 /* Ready */
 $(document).ready(function() {
    // NN_FRAMEWORK.Loading();
