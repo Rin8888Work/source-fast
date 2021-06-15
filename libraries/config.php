@@ -16,12 +16,12 @@
 		'author' => array(
 			'name' => 'Nguyễn Văn Phước',
 			'email' => 'phuocnv106@gmail.com',
-			'timefinish' => '05/2021'
+			'timefinish' => '07/2021'
 		),
 		'arrayDomainSSL' => array(),
 		'database' => array(
 			'server-name' => $_SERVER["SERVER_NAME"],
-			'url' => '/masterSource/',
+			'url' => '/source-fast/',
 			'type' => 'mysql',
 			'host' => 'localhost',
 			'username' => 'root',
@@ -45,16 +45,19 @@
 			),
 			'lang' => array(
 				'vi'=>'Tiếng Việt',
-				'en'=>'Tiếng Anh'
+				'en'=>'Tiếng Anh',
+				'ja'=>'Tiếng Nhật'
 			),
-			'lang-doc' => 'vi|en',
+			'lang-doc' => 'vi|en|ja',
 			'slug' => array(
 				'vi'=>'Tiếng Việt',
-				'en'=>'Tiếng Anh'
+				'en'=>'Tiếng Anh',
+				'ja'=>'Tiếng Nhật'
 			),
 			'seo' => array(
 				'vi'=>'Tiếng Việt',
-				'en'=>'Tiếng Anh'
+				'en'=>'Tiếng Anh',
+				'ja'=>'Tiếng Nhật'
 			),
 			'comlang' => array(
 				"gioi-thieu" => array("vi"=>"gioi-thieu","en"=>"about-us"),
@@ -84,12 +87,12 @@
 			)
 		),
 		'oneSignal' => array(
-			'active' => true,
+			'active' => false,
 			'id' => 'af12ae0e-cfb7-41d0-91d8-8997fca889f8',
 			'restId' => 'MWFmZGVhMzYtY2U0Zi00MjA0LTg0ODEtZWFkZTZlNmM1MDg4'
 		),
 		'license' => array(
-			'version' => "7.0.0",
+			'version' => "1.0.0",
 			'powered' => "phuocnv106@gmail.com"
 		)
 	);

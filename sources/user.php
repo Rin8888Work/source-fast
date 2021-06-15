@@ -1304,7 +1304,8 @@ function Checknumber($phone){
 }
 function checkIsLogin(){
 	global $login_member,$config_base,$func;
-	if($_SESSION[$login_member]['id']!=""){
+
+	if(!empty($_SESSION[$login_member]) && $_SESSION[$login_member]['id']!=""){
 		return true;
 	}else{
 		return false;

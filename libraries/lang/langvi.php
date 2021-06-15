@@ -1,5 +1,5 @@
 <?php
-define("trangchu","Trang chủ");
+define("trangchu","Trang chủ 1");
 define("gioithieu","Giới thiệu");
 define("tintuc","Tin tức");
 define("lienhe","Liên hệ");
@@ -162,4 +162,24 @@ define("thoat","Thoát");
 define("chuanhaptukhoatimkiem","Chưa nhập từ khóa tìm kiếm");
 define("capnhatthongtin","Cập nhật thông tin");
 define("noidungdangcapnhat","Nội dung đang cập nhật");
+define("vechungtoi","Về chúng tôi");
+define("uudai","Ưu đãi");
+define("nhaptukhoa","Nhập từ khóa...");
+define("xemchitiet","Xem chi tiết");
+define("tintucsukien","Tin tức &amp; sự kiện");
+define("doitac","Đối tác");
+define("datphong","Đặt Phòng Khách Sạn");
+define("chonloaiphong","Chọn loại phòng");
+define("ngayden","Ngày đến");
+define("ngaytra","Ngày trả");
+define("nguoilon","Người lớn");
+define("treem","Trẻ em");
+define("ghichu","Ghi chú");
+define("datphong_","ĐẶT PHÒNG");
+define("muahanggopy","Mua hàng - Góp ý");
+define("huongdansudung","Hướng dẫn sử dụng");
+define("danhmucspnoibat","Danh mục sản phẩm nổi bật");
+define("dangkynhanemail","Đăng ký email để nhận tin khuyến mãi");
+define("timkiemnhieunhat","Tìm kiếm nhiều nhất");
+define("khuyenmai","Khuyến mãi");
 ?>

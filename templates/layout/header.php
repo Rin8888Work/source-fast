@@ -26,7 +26,7 @@
 					<?php if(array_key_exists($login_member, $_SESSION) && $_SESSION[$login_member]['active'] == true) { ?>
 						<div class="group-header">
 							<a href="javascript:void(0);" id="dropdownMenuButton">
-								<span>Hi, <?=$_SESSION[$login_member]['username']?></span>
+								<span>Hi, <?=$_SESSION[$login_member]['ten']?></span>
 								<i class="fas fa-angle-down"></i>
 							</a>
 							<ul  class="dropdown-menu" aria-labelledby="dropdownMenuButton">

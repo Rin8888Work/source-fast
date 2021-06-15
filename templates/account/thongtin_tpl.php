@@ -2,7 +2,7 @@
    <form class="form-user validation-user" novalidate method="post" action="account/tai-khoan" enctype="multipart/form-data">
       <div class="row">
          <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-            <?php include TEMPLATE.account."/left_member_tpl.php"; ?>
+            <?php include TEMPLATE."/account/left_member_tpl.php"; ?>
          </div>
          <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-right">
             <h3 class="title-info">Thông tin cá nhân</h3>

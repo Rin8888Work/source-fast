@@ -24,7 +24,7 @@
                      </div>
                      <div class="col-sm-12 bl-remember">
                         <div class="bl-inline bl-brand">
-                           <div class="checkbox bl-checkbox"> <input id="remenber_pass_1" <?php if($_COOKIE['email_user']) echo 'checked' ?> class="requestType" type="checkbox" name="remenber_pass" value="1"> <label for="remenber_pass_1">Ghi nhớ tài khoản</label> </div>
+                           <div class="checkbox bl-checkbox"> <input id="remenber_pass_1" <?php if(isset($_COOKIE['email_user'])) echo 'checked' ?> class="requestType" type="checkbox" name="remenber_pass" value="1"> <label for="remenber_pass_1">Ghi nhớ tài khoản</label> </div>
                         </div>
                         <div class="bl-inline pull-right">
                            <p id="forgot-password">Quên mật khẩu?</p>
